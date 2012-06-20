@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+/*    --------------------------------------------------
+    = Event Bar
+    -------------------------------------------------- */
+.event-bar {
+    width: 100%;
+    height: 20px;
+}
+.event-bar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #f17405;
+}
+.event-bar a:focus,
+.event-bar a:hover {
+    color: #fff;
+    background-color: #d93d04;
+}
+
+/*    --------------------------------------------------
+    = Top Bar
+    -------------------------------------------------- */
+.top-bar {
+    height: 30px;
+    line-height: 30px;
+    font-family: "Times New Roman", serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.top-bar .the_grid,
+.top-bar .the_grid > * {
+    overflow: visible;
+}
+.customer-service .tel {
+    color: #bf1304;
+}
+.ephemeris {
+    text-align: center;
+    font-style: italic;
+}
+.ephemeris .date {
+    color: #999;
+}
+/*    --------------------------------------------------
+    = User Menu
+    -------------------------------------------------- */
+.user-menu {
+    position: relative;
+    z-index: 1200;
+    float: right;
+    height: 20px;
+    margin: 4px 0;
+    letter-spacing: 0.8px;
+    overflow: visible;
+}
+.user-menu > li > a,
+.user-menu > li {
+    float: left;
+    height: 100%;
+}
+.user-menu > li + li {
+    border-left: 1px solid #dcdcdc;
+}
+.user-menu > li > a {
+    display: block;
+    vertical-align: middle;
+    padding: 0 10px;
+    line-height: 20px;
+    color: #444;
+}
+.user-menu > li > a:focus {
+    text-decoration: underline;
+}
+.user-menu .selection > a {
+    position: relative;
+    padding-left: 28px;
+    color: #bf1304;
+}
+.user-menu .selection > a:after {
+    content: url(../img/icons/underline.png);
+    position: absolute;
+    top: 100%;
+    right: 25%;
+}
+.user-menu .selection > a:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 11px;
+    height: 15px;
+    margin-left: 10px;
+    background: url(../img/icons/selection.png) center center no-repeat;
+}
+.user-menu .selection > a span {
+    font-size: 13px;
+}
+/* Gestion sous-menu */
+.user-menu,
+.user-menu > li {
+    position: relative;
+    /*z-index: 1199;*/
+}
+.user-menu .submenu {
+    position: absolute;
+    z-index: 1198;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    left: -50%;
+    width: 300px;
+    padding-top: 15px;
+    white-space: nowrap;
+    background-color: #fff;
+}
+.user-menu > li > a:focus + .submenu,
+.user-menu > li:hover .submenu {
+    visibility: visible;
+    opacity: .9999;
+}
+.user-menu .submenu a {
+    white-space: nowrap;
+}
+
+.selection-list {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+}
+/* Styling for the two triangle (border) */
+.selection-list:after,
+.selection-list:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid transparent;
+}
+.selection-list:before {
+    top: -17px;
+    margin-left: -17px;
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid;
+    border-bottom-color: inherit; /* Can't be included in the shorthand to work */
+    border-left: 17px solid transparent;
+}
+.selection-list > li {
+    padding: 10px 15px 5px;
+}
+.selection-list > li + li {
+    border-top: 1px dotted #dedede;
+}
+.selection-product {
+    font-family: Lato, sans-serif;
+    text-transform: none;
+}
+
+/*    --------------------------------------------------
+    = Logo
+    -------------------------------------------------- */
+.logo a {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 230px;
+    height: 85px;
+    margin: 15px auto 34px;
+}
+.logo a:focus,
+.logo a:hover {
+    bottom: 4px;
+}
+.logo a:focus {
+    background-color: #fff3e4;
+}
+.logo h1,
+.logo h2,
+.logo div {
+    height: 65px;
+    margin-bottom: 6px;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../img/logo.png) center center no-repeat;
+}
+.logo span {
+    display: block;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+}
+
+/*    --------------------------------------------------
+    = Top Nav ~ Main Menu
+    -------------------------------------------------- */
+.top-nav {
+    position: relative;
+    top: 3px;
+}
+.main-menu {
+    position: relative;
+    z-index: 1100;
+    display: table;
+    width: 100%;
+    height: 50px;
+}
+.main-menu > li {
+    position: relative;
+    z-index: 1099;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.main-menu .rbox {
+    position: relative;
+    height: 100%;
+    padding: 0 10px;
+}
+.main-menu > li:first-child .rbox {
+    text-align: left;
+    padding: 0;
+}
+.main-menu > li:last-child .rbox {
+    padding: 0;
+}
+.lt_ie8 .main-menu .rbox,
+.lt_ie8 .main-menu > li {
+    float: left;
+    height: 100%;
+}
+.lt_ie8 .main-menu .rbox > a{
+    height: 47px;
+}
+.main-menu .rbox > a {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #242424;
+    border-bottom: 3px solid transparent;
+}
+.main-menu .rbox > a:focus,
+.main-menu .rbox > a:hover {
+    color: #d93d04;
+    border-bottom-color: #d93d04;
+}
+.main-menu .is_richmenu .rbox > a:focus,
+.main-menu .is_richmenu .rbox > a:hover {
+    border-bottom-color: transparent;
+}
+.main-menu .event-tomorrow a {
+    position: relative;
+}
+.main-menu .event-tomorrow a:before {
+    content: '';
+    position: absolute;
+    top: -130%;
+    right: -20%;
+    display: block;
+    width: 120px;
+    height: 60px;
+    background: url(../img/demain.png) center bottom no-repeat;
+}
+.main-menu .event-tomorrow a:hover:before {
+    top: -140%;
+}
+.main-menu .is_richmenu .rbox > a:before {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dcdcdc;
+    border-bottom-color: transparent;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius:    8px 8px 0 0;
+    -ms-border-radius:     8px 8px 0 0;
+    -o-border-radius:      8px 8px 0 0;
+    border-radius:         8px 8px 0 0;
+}
+.main-menu .is_richmenu .rbox > a:after {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 1098;
+    bottom: -6px;
+    left: 1px;
+    display: block;
+    height: 15px;
+    width: 100%;
+    background: url(../img/bg/main-menu-border.png) center center no-repeat #fff;
+}
+.main-menu .submenu {
+    position: absolute;
+    z-index: 1095;
+    visibility: hidden;
+    opacity: 0;
+    top: 50px;
+    left: 0;
+    width: 155px;
+    padding: 15px 15px 10px 15px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius:    0 0 8px 8px;
+    -ms-border-radius:     0 0 8px 8px;
+    -o-border-radius:      0 0 8px 8px;
+    border-radius:         0 0 8px 8px;
+}
+.lt_ie9 .main-menu .submenu {
+    width: 175px;
+    padding: 5px 0 0 0;
+    background-color: transparent;
+    border-top-color: transparent;
+}
+.main-menu .rbox:hover > a:before,
+.main-menu .rbox:hover > a:after,
+.main-menu .rbox > a:focus + .submenu,
+.main-menu .rbox:hover .submenu {
+    visibility: visible;
+    opacity: .9999;
+}
+.lt_ie9 .main-menu .submenu > ul {
+    padding: 15px;
+    background-color: #fff;
+}
+.main-menu .submenu a {
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    color: #444;
+}
+.main-menu .submenu a:focus,
+.main-menu .submenu a:hover {
+    color: #d93d04;
+}

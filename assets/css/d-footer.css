@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/*    --------------------------------------------------
+    = Frames
+    -------------------------------------------------- */
+.frames {
+    margin-bottom: 30px;
+}
+.frames a {
+    position: relative;
+    display: block;
+    width: 304px;
+    height: 94px;
+    margin: 0 auto;
+    line-height: 94px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+    text-shadow: 0 1px 0px rgba(255,255,255,.5);
+    background: url(http://lorempixel.com/g/302/92) center center no-repeat #fff;
+    border: 5px solid #dcdcdc;
+}
+.frames .the_grid > :first-child a {
+    margin: 0;
+}
+.frames .the_grid > :last-child a {
+    float: right;
+}
+
+
+/*    --------------------------------------------------
+    = Subscribe Module
+    -------------------------------------------------- */
+.subscribe-module {
+    padding: 10px 0;
+    border: 1px solid #dcdcdc;
+}
+.subscribe-module .the_grid > div {
+    text-align: center;
+}
+.subscribe-module span {
+    font-size: 13px;
+    color: #f27405;
+}
+.subscribe-module strong {
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+}
+.subscribe-module small {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    letter-spacing: .5px;
+    color: #f27405;
+}
+.subscribe-module .fb span,
+.subscribe-module .facebook-like {
+    float: left;
+    margin: 11px 0 0 10px;
+}
+.subscribe-module .facebook-like {
+    margin-top: 10px;
+}
+.subscribe-module .the_grid .subscribe-label {
+    border-left: 1px dotted #dcdcdc;
+}
+
+.subscribe-form {
+    margin-top: 5px;
+}
+.subscribe-form input {
+    width: 220px;
+    padding: 4px 10px;
+    font-size: 11px;
+    line-height: 15px;
+    color: #99999f;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+    -moz-box-shadow:    0 1px 1px rgba(0,0,0,.1) inset;
+    -ms-box-shadow:     0 1px 1px rgba(0,0,0,.1) inset;
+    -o-box-shadow:      0 1px 1px rgba(0,0,0,.1) inset;
+    box-shadow:         0 1px 1px rgba(0,0,0,.1) inset;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+    -ms-border-radius:     5px;
+    -o-border-radius:      5px;
+    border-radius:         5px;
+}
+.subscribe-form input:focus,
+.subscribe-form input:hover {
+    border: 1px solid #f3a805;
+}
+.subscribe-form button {
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+}
+.subscribe-module .subscribe-form {
+    margin-bottom: 2px;
+}
+
+/*    --------------------------------------------------
+    = Bottom Nav
+    -------------------------------------------------- */
+.bottom-nav {
+    padding: 25px 0;
+    border-bottom: 1px solid #dcdcdc;
+    letter-spacing: .1px;
+}
+.bottom-nav .the_grid,
+.bottom-nav .the_grid > div {
+    overflow: visible;
+}
+.lt_ie8 .bottom-nav .the_grid,
+.lt_ie8 .bottom-nav .the_grid > div {
+    overflow: hidden;
+}
+.bottom-nav .infos {
+    margin-right: 20px;
+}
+.bottom-nav .infos h3 {
+    position: relative;
+}
+.bottom-nav .infos h3:before {
+    content:url(../img/footer-infos.png);
+    position: absolute;
+    top: -17px;
+    left: -25px;
+    display: block;
+}
+.bottom-nav .footer-image {
+    margin-left: 20px;
+}
+.bottom-nav a {
+    color: #999;
+}
+.bottom-nav li,
+.bottom-nav li a {
+    font-size: 13px;
+}
+.bottom-nav li {
+    float: left;
+    width: 50%;
+    line-height: 18px;
+}
+.bottom-nav li:nth-child(even) {
+    padding-left: 10%;
+    width: 40%;
+}
+.bottom-nav .footer-logo {
+    height: 130px;
+    border: 1px solid #dcdcdc;
+    background-color: #f6f6f6;
+}
+.bottom-nav .footer-logo:hover {
+    border: 1px solid #bcbcbc;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.1) inset;
+    -moz-box-shadow:    0 0 20px rgba(0,0,0,.1) inset;
+    -ms-box-shadow:     0 0 20px rgba(0,0,0,.1) inset;
+    -o-box-shadow:      0 0 20px rgba(0,0,0,.1) inset;
+    box-shadow:         0 0 20px rgba(0,0,0,.1) inset;
+}
+.bottom-nav .footer-logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bottom-nav .footer-logo div {
+    height: 55px;
+    margin: 0 auto;
+    padding: 25px 0 10px;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../img/footer-logo.png) center 25px no-repeat;
+}
+.bottom-nav .footer-logo span {
+    display: block;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/*    --------------------------------------------------
+    = Infos Payment
+    -------------------------------------------------- */
+.infos-payment {
+    padding: 25px 0 20px 0;
+    font-size: 13px;
+    color: #999999;
+    border-bottom: 1px solid #dcdcdc;
+}
+.infos-payment span,
+.infos-payment p {
+    font-size: 13px;
+}
+.infos-payment .tel,
+.infos-payment a {
+    color: #d93d04;
+}
+.infos-payment img {
+    margin-right: 20px;
+    vertical-align: text-bottom;
+}
+.infos-payment > span + span {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px dotted #dcdcdc;
+}
+
+/*    --------------------------------------------------
+    = Partners
+    -------------------------------------------------- */
+.partners {
+    padding: 18px 0;
+    font: 11px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.partners span,
+.partners a {
+    letter-spacing: .4px;
+    color: #999999;
+}
+.partners ul,
+.partners li {
+    display: inline;
+}
+
+/*    --------------------------------------------------
+    = Copyright
+    -------------------------------------------------- */
+.copyright span {
+    font: 11px/45px Arial, sans-serif;
+    color: #b2b2b2;
+}

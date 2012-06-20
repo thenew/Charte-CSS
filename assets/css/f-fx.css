@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*    --------------------------------------------------
+    = Hover
+    -------------------------------------------------- */
+.desc-selection a:hover,
+.user-menu > li > a:focus,
+.user-menu > li > a:hover,
+a:hover {
+    color: #bf1304;
+}
+.delivery-form a:hover,
+.order-infos-sheet .link:focus,
+.order-infos-sheet .link:hover,
+.breadcrumb a:focus,
+.breadcrumb a:hover,
+.infos-payment a:hover {
+    color: #ffa06d;
+}
+.florists-pan a:focus,
+.florists-pan a:hover,
+.cssn_form small a:focus,
+.cssn_form small a:hover,
+.list li a:hover,
+.bottom-nav a:hover {
+    color: #d93d04;
+}
+.popin .close:hover,
+.img-selection:hover,
+.more-products:hover {
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+}
+
+/*    --------------------------------------------------
+    = Transtions
+    -------------------------------------------------- */
+
+.special-delivery-4h,
+.special-delivery-24h,
+.slider .prev,
+.slider .next,
+.cssn_form .help,
+.product-card a > *,
+.share li a,
+.zoom,
+.bottom-nav .footer-logo,
+.info-box,
+.button {
+    -webkit-transition: all .2s;
+    -moz-transition:    all .2s;
+    -ms-transition:     all .2s;
+    -o-transition:      all .2s;
+    transition:         all .2s;
+}
+.multi-boxes a,
+.event-bar a,
+a {
+    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition:    color .2s ease-in-out, background-color .2s ease-in-out;
+    -ms-transition:     color .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition:      color .2s ease-in-out, background-color .2s ease-in-out;
+    transition:         color .2s ease-in-out, background-color .2s ease-in-out;
+}
+.popin .close,
+.img-selection,
+.more-products,
+.user-menu .submenu,
+a img {
+    -webkit-transition: opacity .3s ease;
+    -moz-transition:    opacity .3s ease;
+    -ms-transition:     opacity .3s ease;
+    -o-transition:      opacity .3s ease;
+    transition:         opacity .3s ease;
+}
+.share .bg,
+.user-menu .submenu .button {
+    -webkit-transition: box-shadow .2s, opacity .3s ease;
+    -moz-transition:    box-shadow .2s, opacity .3s ease;
+    -ms-transition:     box-shadow .2s, opacity .3s ease;
+    -o-transition:      box-shadow .2s, opacity .3s ease;
+    transition:         box-shadow .2s, opacity .3s ease;
+}
+.main-menu .rbox > a {
+    -webkit-transition: color .2s, border .2s ease .1s;
+    -moz-transition:    color .2s, border .2s ease .1s;
+    -ms-transition:     color .2s, border .2s ease .1s;
+    -o-transition:      color .2s, border .2s ease .1s;
+    transition:         color .2s, border .2s ease .1s;
+}
+.one-product .anim,
+.main-menu .event-tomorrow a:before {
+    -webkit-transition: top .4s ease-out;
+    -moz-transition:    top .4s ease-out;
+    -ms-transition:     top .4s ease-out;
+    -o-transition:      top .4s ease-out;
+    transition:         top .4s ease-out;
+}
+.logo a {
+    -webkit-transition: bottom .4s ease-out;
+    -moz-transition:    bottom .4s ease-out;
+    -ms-transition:     bottom .4s ease-out;
+    -o-transition:      bottom .4s ease-out;
+    transition:         bottom .4s ease-out;
+}
+.double-product .product-photo a {
+    -webkit-transition: padding .3s ease-out;
+    -moz-transition:    padding .3s ease-out;
+    -ms-transition:     padding .3s ease-out;
+    -o-transition:      padding .3s ease-out;
+    transition:         padding .3s ease-out;
+}

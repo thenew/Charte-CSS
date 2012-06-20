@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Journal';
+    src: url('../fonts/journal.eot');
+    src: url('../fonts/journal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/journal.svg#Journal') format('svg'),
+         url('../fonts/journal.woff') format('woff'),
+         url('../fonts/journal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
