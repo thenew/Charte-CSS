@@ -1,3 +1,3 @@
-$(document).ready(function() {
-
-});
+hljs.initHighlightingOnLoad();
+// $(document).ready(function() {
+// });

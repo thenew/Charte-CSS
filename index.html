@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Charte CSS</title>
     <link rel="icon" href="/favicon.png">
-    <link rel="stylesheet" href="assets/style.php" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/css/a-reset.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
     <script type="text/javascript" src="assets/js/events.js"></script>
     <!--[if lt IE 9]>
         <script src="assets/js/ie/html5.js"></script>
@@ -19,6 +22,22 @@
 <!--[if gt IE 9 ]><body is_ie10 gt_ie9'); ?>><![endif]-->
 <!--[if !IE]><!--><body><!--<![endif]-->
     <div class="wrapper">
-        <header class="header">
-            <?php include TEMPLATEPATH.'/inc/modules/header/'; ?>
-        </header>
+
+        <h1>Charte CSS</h1>
+
+        <pre><code>
+            .selecteur-1,
+            .selecteur-2,
+            .selecteur-3 {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing:    border-box;
+                box-sizing:         border-box;
+                display: block;
+                color: #333;
+                background: #fff;
+            }
+        </code></pre>
+
+    </div><!-- .wrapper -->
+</body>
+</html>
