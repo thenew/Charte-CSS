@@ -8,6 +8,9 @@
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="assets/css/a-reset.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/y-mediaqueries.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/lib/mootools-core-1.4.5.js"></script>
+    <script type="text/javascript" src="assets/js/lib/mootools-more-1.4.0.1-scroll.js"></script>
     <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
     <script type="text/javascript" src="assets/js/events.js"></script>
     <!--[if lt IE 9]>
@@ -21,22 +24,89 @@
    <!--[if IE 9 ]><body is_ie9 lt_ie10'); ?>><![endif]-->
 <!--[if gt IE 9 ]><body is_ie10 gt_ie9'); ?>><![endif]-->
 <!--[if !IE]><!--><body><!--<![endif]-->
-    <div class="wrapper">
+    <a href="https://github.com/thenew/Charte-CSS" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <div class="wrapper" id="top">
+        
+        <nav>
+            <span><a class="scrollAnchor" href="#top">Début</a></span>
+            <ol>
+                <li><a class="scrollAnchor" href="#nommage">Nommage</a></li>
+                <li><a class="scrollAnchor" href="#formatage">Formatage</a></li>
+            </ol>
+        </nav>
 
         <h1>Charte CSS</h1>
 
-        <pre><code>
-            .selecteur-1,
-            .selecteur-2,
-            .selecteur-3 {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing:    border-box;
-                box-sizing:         border-box;
-                display: block;
-                color: #333;
-                background: #fff;
-            }
-        </code></pre>
+        <div class="main-col">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+        </div>
+        
+        <h2 id="nommage">Nommage</h2>
+        
+        <div class="main-col">
+            <ul>
+                <li>In English only</li>
+                <li>Pas d’ID, que des classes</li>
+                <li>tiret “-” et pas d’underscore “_”</li>
+            </ul>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+        </div>
+        
+        <h2 id="formatage">Formatage</h2>
+
+        <div class="main-col">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcak
+            </p>
+        </div>
+
+        <section class="exemple cf">
+            <div class="main-col">
+                <pre class="exemple01"><code>
+.selecteur<span id="note-01" class="note">-</span>1,
+.selecteur-2,
+.selecteur-3 {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+    padding: 6px 50px;
+    margin-bottom: 20px;
+    overflow: auto;
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #F8F8F8;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    -ms-border-radius:     3px;
+    -o-border-radius:      3px;
+    border-radius:         3px;
+}
+                </code></pre>
+            </div>
+            <aside>
+                <div id="note-01-desc">tiret “-” et pas d’underscore “_”</div>
+            </aside>
+        </section>
 
     </div><!-- .wrapper -->
 </body>

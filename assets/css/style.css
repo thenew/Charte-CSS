@@ -4,6 +4,8 @@
     -------------------------------------------------- */
 /*
 red : #DD4B39
+green : #00D892
+blue: #4A86E8
 */
 
 /*    --------------------------------------------------
@@ -11,14 +13,27 @@ red : #DD4B39
     -------------------------------------------------- */
 
 body {
-    font: 20px 'Bitter', serif;
-    color: #222;
-    background-color: #efefef;
+    font: 18px 'Bitter', serif;
+    color: #333;
+    background-color: #f0f0f0;
+    text-align: justify;
 }
 
 .wrapper {
+    position: relative;
+    left: 50%;
+    width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 0 0 -500px;
+    -webkit-transition: width .4s ease .1s;
+    -moz-transition:    width .4s ease .1s;
+    -ms-transition:     width .4s ease .1s;
+    -o-transition:      width .4s ease .1s;
+    transition:         width .4s ease .1s;
+}
+
+.main-col {
+    max-width: 66%;
 }
 
 h1,
@@ -26,11 +41,27 @@ h2 {
     font-weight: bold;
 }
 
+h1 {
+    margin: 20px auto 30px;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
     color: #DD4B39;
 }
+
 pre {
-    padding: 6px 10px;
+    position: relative;
+/*    display: inline-block;
+    *display: inline;
+    *zoom: 1;*/
+    max-width: 100%;
+    padding: 6px 50px;
+    margin-bottom: 20px;
     overflow: auto;
     font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
     font-size: 18px;
@@ -43,6 +74,89 @@ pre {
     -o-border-radius:      3px;
     border-radius:         3px;
 }
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+a {
+  color: #DD4B39;
+  -webkit-transition: color .2s;
+  -moz-transition:    color .2s;
+  -ms-transition:     color .2s;
+  -o-transition:      color .2s;
+  transition:         color .2s;
+}
+
+a:hover {
+  color: #ff655f;
+}
+
+/*    --------------------------------------------------
+    = Nav
+    -------------------------------------------------- */
+
+nav {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    width: 200px;
+    margin-left: -700px;
+}
+
+.exemple .main-col {
+    float: left;
+}
+
+.exemple aside {
+    float: right;
+    max-width: 33%;
+}
+
+/*    --------------------------------------------------
+    = Notes
+    -------------------------------------------------- */
+
+.note {
+    /*position: relative;*/
+    background-color: #fff7ce;
+    /*position: relative;*/
+    -webkit-transition: background-color .2s;
+    -moz-transition:    background-color .2s;
+    -ms-transition:     background-color .2s;
+    -o-transition:      background-color .2s;
+    transition:         background-color .2s;
+        
+}
+
+.note:hover {
+    background-color: #FFE599;
+}
+
+.exemple01 {
+    position: relative;
+}
+
+#note-01-desc {
+    /*position: absolute;*/
+    /*left: 100%;*/
+}
+
+/*    --------------------------------------------------
+    = Divers
+    -------------------------------------------------- */
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after { clear:both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf { *zoom:1; }
 
 /*    --------------------------------------------------
     = Github theme HIGHLIGHT.JS
