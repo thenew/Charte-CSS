@@ -1,0 +1,7 @@
+@media (max-width: 1000px) {
+    .wrapper {
+        left: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
