@@ -13,7 +13,7 @@ blue: #4A86E8
     -------------------------------------------------- */
 
 body {
-    font: 18px 'Bitter', serif;
+    font: 18px 'Bditter', Cambria, serif;
     color: #333;
     background-color: #f0f0f0;
     text-align: justify;
@@ -23,8 +23,9 @@ body {
     position: relative;
     left: 50%;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 0 0 -500px;
+    max-width: 900px;
+    /*margin left -50% width*/
+    margin: 0 0 0 -450px;
     -webkit-transition: width .4s ease .1s;
     -moz-transition:    width .4s ease .1s;
     -ms-transition:     width .4s ease .1s;
@@ -35,6 +36,66 @@ body {
 .main-col {
     max-width: 66%;
 }
+
+/*    --------------------------------------------------
+    = Nav
+    -------------------------------------------------- */
+
+nav {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    width: 100px;
+    /*-50% of wrapper width -50% of nav width*/
+    margin-left: -600px;
+}
+
+.exemple {
+    display: table;
+    vertical-align: top;
+}
+
+.exemple .main-col,
+.exemple aside {
+    display: table-cell;
+}
+
+.exemple aside {
+    padding-left: 10px;
+}
+
+.exemple aside li {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    border-left: 1px solid #bbb;
+    opacity: 0.5;
+    -webkit-transition: all .2s ease .1s;
+    -moz-transition:    all .2s ease .1s;
+    -ms-transition:     all .2s ease .1s;
+    -o-transition:      all .2s ease .1s;
+    transition:         all .2s ease .1s;
+}
+
+.exemple aside .active {
+    left: 10px;
+    padding: 5px 0 5px 10px;
+    border-left: 1px solid #333;
+    opacity: 1;
+}
+
+.exemple aside .active:first-child {
+    padding-top: 0;
+}
+
+.exemple aside .active:last-child {
+    padding-bottom: 0;
+}
+
+/*    --------------------------------------------------
+    = Commons
+    -------------------------------------------------- */
 
 h1,
 h2 {
@@ -54,83 +115,40 @@ h2 {
     color: #DD4B39;
 }
 
-pre {
-    position: relative;
-/*    display: inline-block;
-    *display: inline;
-    *zoom: 1;*/
-    max-width: 100%;
-    padding: 6px 50px;
-    margin-bottom: 20px;
-    overflow: auto;
-    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
-    font-size: 18px;
-    line-height: 20px;
-    background-color: #F8F8F8;
-    border: 1px solid #CCC;
-    -webkit-border-radius: 3px;
-    -moz-border-radius:    3px;
-    -ms-border-radius:     3px;
-    -o-border-radius:      3px;
-    border-radius:         3px;
-}
-
 p {
     margin-bottom: 20px;
     line-height: 1.6em;
 }
 
 a {
-  color: #DD4B39;
-  -webkit-transition: color .2s;
-  -moz-transition:    color .2s;
-  -ms-transition:     color .2s;
-  -o-transition:      color .2s;
-  transition:         color .2s;
+    color: #DD4B39;
+    -webkit-transition: color .2s;
+    -moz-transition:    color .2s;
+    -ms-transition:     color .2s;
+    -o-transition:      color .2s;
+    transition:         color .2s;
 }
 
 a:hover {
-  color: #ff655f;
-}
-
-/*    --------------------------------------------------
-    = Nav
-    -------------------------------------------------- */
-
-nav {
-    position: fixed;
-    top: 5%;
-    left: 50%;
-    width: 200px;
-    margin-left: -700px;
-}
-
-.exemple .main-col {
-    float: left;
-}
-
-.exemple aside {
-    float: right;
-    max-width: 33%;
+    color: #ff655f;
 }
 
 /*    --------------------------------------------------
     = Notes
     -------------------------------------------------- */
 
-.note {
-    /*position: relative;*/
-    background-color: #fff7ce;
-    /*position: relative;*/
+.exemple pre .n {
+    /*background-color: #fff7ce;*/
+    background-color: #FFDA28;
+    cursor: help;
     -webkit-transition: background-color .2s;
     -moz-transition:    background-color .2s;
     -ms-transition:     background-color .2s;
     -o-transition:      background-color .2s;
     transition:         background-color .2s;
-        
 }
 
-.note:hover {
+.exemple pre .n:hover {
     background-color: #FFE599;
 }
 
@@ -138,10 +156,6 @@ nav {
     position: relative;
 }
 
-#note-01-desc {
-    /*position: absolute;*/
-    /*left: 100%;*/
-}
 
 /*    --------------------------------------------------
     = Divers
@@ -162,6 +176,24 @@ nav {
     = Github theme HIGHLIGHT.JS
     github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     -------------------------------------------------- */
+
+pre {
+    position: relative;
+    max-width: 100%;
+    padding: 5px 40px;
+    margin-bottom: 20px;
+    overflow: auto;
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #F8F8F8;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    -ms-border-radius:     3px;
+    -o-border-radius:      3px;
+    border-radius:         3px;
+}
 
 pre code {
   display: block;
@@ -188,10 +220,6 @@ pre .status {
   font-weight: bold
 }
 
-pre .number,
-pre .hexcolor {
-  color: #099
-}
 
 pre .string,
 pre .tag .value,
@@ -200,8 +228,10 @@ pre .tex .formula {
   color: #d14
 }
 
+pre .number,
+pre .hexcolor,
 pre .value {
-    color: #008080
+    color: #dc3522
 }
 
 pre .title,
@@ -216,11 +246,13 @@ pre .subst {
   font-weight: normal
 }
 
+
+pre .class,
 pre .class .title,
 pre .haskell .type,
 pre .vhdl .literal,
 pre .tex .command {
-  color: #458;
+  color: #277473;
   font-weight: bold
 }
 
@@ -241,11 +273,6 @@ pre .lisp .body {
 
 pre .regexp {
   color: #009926
-}
-
-pre .class {
-  color: #458;
-  font-weight: bold
 }
 
 pre .symbol,

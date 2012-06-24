@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charte CSS</title>
     <link rel="icon" href="/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="assets/css/a-reset.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/y-mediaqueries.css" type="text/css" />
+    <!-- <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' /> -->
     <script type="text/javascript" src="assets/js/lib/mootools-core-1.4.5.js"></script>
     <script type="text/javascript" src="assets/js/lib/mootools-more-1.4.0.1-scroll.js"></script>
     <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
@@ -24,8 +24,8 @@
    <!--[if IE 9 ]><body is_ie9 lt_ie10'); ?>><![endif]-->
 <!--[if gt IE 9 ]><body is_ie10 gt_ie9'); ?>><![endif]-->
 <!--[if !IE]><!--><body><!--<![endif]-->
-    <a href="https://github.com/thenew/Charte-CSS" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-
+<!--     <a href="https://github.com/thenew/Charte-CSS" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+ -->
     <div class="wrapper" id="top">
         
         <nav>
@@ -78,36 +78,40 @@
 
         <section class="exemple cf">
             <div class="main-col">
-                <pre class="exemple01"><code>
-.selecteur<span id="note-01" class="note">-</span>1,
-.selecteur-2,
-.selecteur-3 {
-    position: relative;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    max-width: 100%;
-    padding: 6px 50px;
-    margin-bottom: 20px;
-    overflow: auto;
-    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
-    font-size: 18px;
-    line-height: 20px;
-    background-color: #F8F8F8;
-    border: 1px solid #CCC;
-    -webkit-border-radius: 3px;
-    -moz-border-radius:    3px;
-    -ms-border-radius:     3px;
-    -o-border-radius:      3px;
-    border-radius:         3px;
-}
+                <pre class="exemple01"><code class="css">
+<span class="class">.selecteur</span><span class="n class" data-target="note-01">-</span><span class="class">1</span>,
+<span class="class">.s-2</span><span class="n" data-target="note-02">,</span>
+<span class="class">.fr .s-3</span><span class="n" data-target="note-03"> </span>{
+    position:<span class="n" data-target="note-04"> </span><span class="value">relative</span>;
+    display: <span class="value">inline-block</span>;
+<span class="n" data-target="note-05">    </span>padding: <span class="value">6px 50px</span>;
+    margin-bottom: <span class="value">20px</span>;
+    font-size: <span class="value">18px</span>;
+    background-color: <span class="value">#F8F8F8</span>;
+    border: <span class="value">1px solid #CCC</span><span class="n" data-target="note-06">;</span>
+<span class="n" data-target="note-07">}</span>
+<span class="n" data-target="note-08"> </span>
                 </code></pre>
             </div>
             <aside>
-                <div id="note-01-desc">tiret “-” et pas d’underscore “_”</div>
+                <ul>
+                    <li id="note-01">tiret “-” et pas d’underscore “_”</li>
+                    <li id="note-02" class="">Un seul sélecteur par ligne</li>
+                    <li id="note-03">Un espace avant l'accolade ouvrante d'une règle</li>
+                    <li id="note-04">Un espace après les deux points d'une déclaration</li>
+                    <li id="note-05">Une déclaration par ligne dans un bloc de déclarations</li>
+                    <li id="note-06">Ajoutez toujours un point-virgule à la fin d'une déclaration</li>
+                    <li id="note-07">Fermez l'accolade d'une règle au même niveau que le premier caractère de la règle</li>
+                    <li id="note-08">Sautez une ligne entre chaque règle</li>
+                </ul>
             </aside>
         </section>
 
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
     </div><!-- .wrapper -->
 </body>
 </html>
