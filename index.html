@@ -33,17 +33,13 @@
             <ol>
                 <li><a class="scrollAnchor" href="#nommage">Nommage</a></li>
                 <li><a class="scrollAnchor" href="#formatage">Formatage</a></li>
+                <li><a class="scrollAnchor" href="#exceptions">Exceptions</a></li>
             </ol>
         </nav>
 
         <h1>Charte CSS</h1>
 
         <div class="main-col">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
-                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
-                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
-            </p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
                 Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
@@ -69,17 +65,10 @@
         
         <h2 id="formatage">Formatage</h2>
 
-        <div class="main-col">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
-                Cupcak
-            </p>
-        </div>
-
-        <section class="exemple cf">
+        <section class="exemple">
             <div class="main-col">
                 <pre class="exemple01"><code class="css">
-<span class="class">.selecteur</span><span class="n class" data-target="note-01">-</span><span class="class">1</span>,
+<span class="class">.selector</span><span class="n class" data-target="note-01">-</span><span class="class">1</span>,
 <span class="class">.s-2</span><span class="n" data-target="note-02">,</span>
 <span class="class">.fr .s-3</span><span class="n" data-target="note-03"> </span>{
     position:<span class="n" data-target="note-04"> </span><span class="value">relative</span>;
@@ -107,11 +96,122 @@
             </aside>
         </section>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
-                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
-                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
-            </p>
+        <h2 id="exceptions">Exceptions et légers écarts</h2>
+
+        <section class="exemple">
+            <div class="main-col">
+                <pre class="highlight"><code>
+.selector-1 { width: 10%; }
+.selecteur-2 { width: 20%; }
+.selecteur-3 { width: 30%; }
+                </code></pre>
+            </div>
+            <aside>
+                <p>De gros blocs de déclarations uniques peuvent utiliser un format légèrement différent, à savoir d'être regroupées sur une seule ligne. Dans ce cas, il faut insérer un espace après l'accolade ouvrante et avant l'accolade fermante.</p>
+            </aside>
+        </section>
+
+        <section class="exemple">
+            <div class="main-col">
+                <pre class="highlight"><code>
+.selecteur {
+    box-shadow:
+        1px 1px 1px #000,
+        2px 2px 1px 1px #ccc inset;
+    background-image:
+        linear-gradient(#fff, #ccc),
+        linear-gradient(#f3c, #4ec);
+}
+                </code></pre>
+            </div>
+            <aside>
+                <p>Les longues valeurs de propriétés séparées par des virgules - comme des ensembles de dégradés et d'ombre - peuvent être agencées sur plusieurs lignes de manière à améliorer la lisibilité et produire des fichiers diff plus utiles. Il existe plusieurs formats que l'on peut utiliser.</p>
+            </aside>
+        </section>
+
+        <section class="exemple">
+            <div class="main-col">
+                <pre class="highlight"><code>
+.selector {
+    -webkit-transition: all .2s;
+    -moz-transition:    all .2s;
+    -ms-transition:     all .2s;
+    -o-transition:      all .2s;
+    transition:         all .2s;
+}
+                </code></pre>
+            </div>
+            <aside>
+                <p>Avec les préfixes vendeurs, l'alignement vertical se fait après les deux points.</p>
+            </aside>
+        </section>
+
+        <h2 id="ordre">Ordre de déclaration</h2>
+
+        <section class="exemple">
+            <div class="main-col">
+                <pre class="exemple-order"><code class="css">
+<span class="class">.selector</span> {
+<span class="n" data-target="note-o1">    content
+    position
+    z-index
+    top
+    right
+    bottom
+    left
+
+    display
+    visibility
+    float
+</span>
+<span class="n" data-target="note-o2">    width
+    height
+    padding
+    margin
+    overflow
+</span>
+<span class="n" data-target="note-o3">    font
+    font-family
+    font-size
+    font-weight
+    font-variant
+    text-align
+    text-indent
+    text-transform
+    text-decoration
+    line-height
+    word-spacing
+    white-space
+    letter-spacing
+    vertical-align ?
+    color
+    text-shadow
+</span>
+<span class="n" data-target="note-o4">    border
+    border-radius
+    outline
+</span>
+<span class="n" data-target="note-o5">    background
+    box-shadow
+</span>
+<span class="n" data-target="note-o6">    opacity
+    cursor
+    transition
+    animation</span>
+}
+                </code></pre>
+            </div>
+            <aside>
+                <ol>
+                    <li id="note-o1">Position</li>
+                    <li id="note-o2">Box</li>
+                    <li id="note-o3">Text</li>
+                    <li id="note-o4">Border</li>
+                    <li id="note-o5">Background</li>
+                    <li id="note-o6">Other</li>
+                </ol>
+            </aside>
+        </section>
     </div><!-- .wrapper -->
 </body>
 </html>

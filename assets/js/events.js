@@ -1,14 +1,14 @@
 window.addEvent('domready', function(){
 
     // Highlight
-    $$('.Highlight').each(function(el){
+    $$('.highlight').each(function(el){
         hljs.highlightBlock(el)
     });
 
     // notes
     $$('.n').addEvents({
         mouseenter: function(e){
-            console.log(e.target.getProperty('data-target'));
+            // console.log(e.target.getProperty('data-target'));
             var def = e.target.getProperty('data-target');
             $$('#'+def).toggleClass('active');
         },
@@ -27,5 +27,14 @@ window.addEvent('domready', function(){
         scrollAnchor.toElement($(anchor));
     });
 
+    var pos = $$('.exemple-order').getPosition();
+    console.log(pos);
+
+    window.addEvent('scroll', function(e){
+        // console.log(window.getScroll().y);
+        // var useFixedSidebar = window.getScroll() >= 400;
+        // alert(useFixedSidebar);
+        // $('.my-sidebar-items').toggleClass('fixed', useFixedSidebar);
+    });
 
 });

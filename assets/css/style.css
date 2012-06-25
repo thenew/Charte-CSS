@@ -50,6 +50,33 @@ nav {
     margin-left: -600px;
 }
 
+/*    --------------------------------------------------
+    = Notes
+    -------------------------------------------------- */
+
+.exemple .n {
+    /*background-color: #fff7ce;*/
+    background-color: #FFDA28;
+    cursor: help;
+    -webkit-transition: background-color .2s;
+    -moz-transition:    background-color .2s;
+    -ms-transition:     background-color .2s;
+    -o-transition:      background-color .2s;
+    transition:         background-color .2s;
+}
+
+.exemple .n:hover {
+    background-color: #FFE599;
+}
+
+.exemple01 {
+    position: relative;
+}
+
+/*    --------------------------------------------------
+    = Exemple
+    -------------------------------------------------- */
+
 .exemple {
     display: table;
     vertical-align: top;
@@ -66,10 +93,8 @@ nav {
 
 .exemple aside li {
     position: relative;
-    padding-left: 10px;
     margin-bottom: 10px;
     line-height: 1.4em;
-    border-left: 1px solid #bbb;
     opacity: 0.5;
     -webkit-transition: all .2s ease .1s;
     -moz-transition:    all .2s ease .1s;
@@ -78,11 +103,23 @@ nav {
     transition:         all .2s ease .1s;
 }
 
+.exemple aside ul li {
+    padding-left: 10px;
+    border-left: 1px solid #bbb;
+}
+
+.exemple aside ol li {
+    margin-left: 30px;
+}
+
 .exemple aside .active {
     left: 10px;
     padding: 5px 0 5px 10px;
-    border-left: 1px solid #333;
     opacity: 1;
+}
+
+.exemple aside ul .active {
+    border-left: 1px solid #333;
 }
 
 .exemple aside .active:first-child {
@@ -91,6 +128,12 @@ nav {
 
 .exemple aside .active:last-child {
     padding-bottom: 0;
+}
+
+/*Order*/
+.exemple-order .n {
+    display: block;
+    background-color: #fff7ce;
 }
 
 .github {
@@ -131,7 +174,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 24px;
     color: #DD4B39;
 }
@@ -152,29 +195,6 @@ a {
 
 a:hover {
     color: #ff655f;
-}
-
-/*    --------------------------------------------------
-    = Notes
-    -------------------------------------------------- */
-
-.exemple pre .n {
-    /*background-color: #fff7ce;*/
-    background-color: #FFDA28;
-    cursor: help;
-    -webkit-transition: background-color .2s;
-    -moz-transition:    background-color .2s;
-    -ms-transition:     background-color .2s;
-    -o-transition:      background-color .2s;
-    transition:         background-color .2s;
-}
-
-.exemple pre .n:hover {
-    background-color: #FFE599;
-}
-
-.exemple01 {
-    position: relative;
 }
 
 
