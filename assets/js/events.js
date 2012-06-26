@@ -27,14 +27,32 @@ window.addEvent('domready', function(){
         scrollAnchor.toElement($(anchor));
     });
 
-    var pos = $$('.exemple-order').getPosition();
-    console.log(pos);
+    $$('.exemple').each(function(item, index){
+        var boxY = item.getElement('.main-col').getPosition().y;
+        var boxH = item.getElement('.main-col > *').getHeight();
+        var stickyX = item.getElement('aside').getPosition().x;
+        var stickyH = item.getElement('aside > *').getHeight();
 
-    window.addEvent('scroll', function(e){
-        // console.log(window.getScroll().y);
-        // var useFixedSidebar = window.getScroll() >= 400;
-        // alert(useFixedSidebar);
-        // $('.my-sidebar-items').toggleClass('fixed', useFixedSidebar);
+        window.addEvent('scroll', function(e){
+            // Si le content est assez grand et le sticky assez petit
+            if(boxH > 250 && stickyH < boxH/2) {
+                // si on scroll sur le content
+                if ((window.getScroll().y >= boxY) && (window.getScroll().y <= (boxY+boxH-stickyH)) ) {
+                    item.getElement('aside').setStyles({
+                        position: 'fixed',
+                        top: 10,
+                        left: stickyX
+                    });
+                } else {
+                    item.getElement('aside').setStyles({
+                        position: 'relative',
+                        top: 'inherit',
+                        left: 'inherit'
+                    });
+                }
+            }
+        });
+
     });
 
 });
