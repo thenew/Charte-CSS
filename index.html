@@ -31,10 +31,11 @@
         <nav>
             <span><a class="scrollAnchor" href="#top">Début</a></span>
             <ol>
+                <li><a class="scrollAnchor" href="#structure">Structure</a></li>
                 <li><a class="scrollAnchor" href="#nommage">Nommage</a></li>
                 <li><a class="scrollAnchor" href="#format">Format</a></li>
                 <li><a class="scrollAnchor" href="#exceptions">Exceptions</a></li>
-                <li><a class="scrollAnchor" href="#ordre">Organisation</a></li>
+                <li><a class="scrollAnchor" href="#ordre">Ordre</a></li>
             </ol>
         </nav>
 
@@ -49,17 +50,47 @@
             </p>
         </div>
         
+        <h2 id="structure">Structure</h2>
+        
+        <div class="main-col">
+            <p>
+                Il est préférable de répartir les CSS en catégories dans des fichiers séparés. Les fichiers sont à charger dans l'ordre suivant.
+            </p>
+            <ol>
+                <li>reset</li>
+                <li>fonts</li>
+                <li>normalize</li>
+                <li>layout</li>
+                <li>objets</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>pages</li>
+                <li>animation</li>
+                <li>mediaqueries</li>
+            </ol>
+            <p>
+                À l'intérieur d'un fichier CSS, il est plus agréable de signaler les différentes parties par des commentaires :
+            </p>
+            <pre><code class="css">
+<span class="comment">
+/*    -----------------------------------------------
+    = Grande partie (ex : Nav)
+    ----------------------------------------------- */
+
+
+
+/*Sous-partie (ex : submenu)*/
+</span>
+            </code></pre>
+        </div>
+        
         <h2 id="nommage">Nommage</h2>
         
         <div class="main-col">
-            <ul>
-                <li>Codez le plus possible en anglais (noms des classes, commentaires)</li>
-                <li>Ecrivez en minuscule, séparez les mots par un tiret, pas de CamelCase</li>
-                <li>Utilisez toujours le même type de guillemets</li>
-                
-                
-                
-            </ul>
+            <p>
+                Codez le plus possible en anglais (noms des classes, commentaires). Ecrivez toujours en minuscule. Séparez les mots par un tiret, pas de CamelCase.
+                Le nom d'une classe doit signifier la fonction de l'élément qu'elle style et non son apparence.
+            </p>
         </div>
         
         <h2 id="format">Format</h2>
@@ -68,8 +99,9 @@
             <div class="main-col">
                 <pre class="exemple01"><code class="css">
 <span class="class"><span class="n class" data-target="note-class">.</span>selector</span><span class="n class" data-target="note-01">-</span><span class="class">1</span>,
+<span class="class">li + li</span>,
 <span class="class">.s-2</span><span class="n" data-target="note-02">,</span>
-<span class="class">aside .s-3</span><span class="n" data-target="note-03"> </span>{
+<span class="class">nav > .s-3</span><span class="n" data-target="note-03"> </span>{
     position:<span class="n" data-target="note-04"> </span><span class="value">relative</span>;
     display: <span class="value">inline-block</span>;
 <span class="n" data-target="note-05">    </span>padding: <span class="value">6px 50px</span>;
@@ -82,12 +114,12 @@
     -moz-transition:    <span class="value">all .2s</span>;
     -ms-transition:     <span class="value">all <span class="n" data-target="note-o">.2s</span></span>;
     -o-transition:      <span class="value">all .2s</span>;
-    transition:         <span class="value">all .2s</span><span class="n" data-target="note-07">;</span>
-<span class="n" data-target="note-08">}</span>
+    transition:         <span class="value">all .2s</span>;
+}
 <span class="n" data-target="note-09"> </span>
 <span class="class">.selector a</span> {
-    color: <span class="value">#bada55</span>;
-}
+    color: <span class="value">#bada55</span><span class="n" data-target="note-07">;</span>
+<span class="n" data-target="note-08">}</span>
                 </code></pre>
             </div>
             <aside>
@@ -102,9 +134,9 @@
                     <li id="note-06">Utilisez le code hexadecimal à 3 caractères dès que possible</li>
                     <li id="note-alignement">Avec les préfixes vendeurs, l'alignement vertical se fait après les deux points</li>
                     <li id="note-o">Ne précisez pas le 0 dans une valeur comme 0.2</li>  
+                    <li id="note-09">Sautez une ligne entre chaque règle</li>
                     <li id="note-07">Ajoutez toujours un point-virgule à la fin d'une déclaration</li>
                     <li id="note-08">Fermez l'accolade au même niveau que les sélecteurs</li>
-                    <li id="note-09">Sautez une ligne entre chaque règle</li>
                 </ul>
             </aside>
         </section>

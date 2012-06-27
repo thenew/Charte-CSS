@@ -18,7 +18,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article, aside, audio, canvas, datagrid, datalist, details, dialog, figure, figcaption, footer, header, hgroup, menu, nav, section, video {display: block;}
 abbr, eventsource, mark, meter, time, progress, output, bb {display:inline;}
 a{text-decoration:none;}
-ul{list-style:none;}
+ol, ul{list-style:none;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 ins{text-decoration:none;}

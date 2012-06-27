@@ -46,6 +46,15 @@ nav {
     left: 50%;
     width: 100px;
     margin-left: -600px;
+    text-align: left;
+}
+
+nav ol {
+    list-style: decimal outside;
+}
+
+nav ol li:before {
+    content: "";
 }
 
 /*    --------------------------------------------------
@@ -110,10 +119,6 @@ nav {
     border-left: 1px solid #bbb;
 }
 
-.exemple aside ol li {
-    margin-left: 30px;
-}
-
 .exemple aside .active {
     left: 10px;
     padding: 5px 0 5px 10px;
@@ -166,7 +171,7 @@ nav {
 footer {
     padding: 10px 0 0 0;
     margin: 10px auto 20px;
-    border-top: 2px groove #fff;
+    border-top: 1px solid #ccc;
 }
 
 footer .refs {
@@ -209,6 +214,16 @@ li {
 
 ul {
     list-style: disc inside;
+}
+
+ol {
+    counter-reset: list;
+}
+
+ol li:before {
+    counter-increment: list;
+    content: counter(list) " ";
+    color: #aaa;
 }
 
 a {
@@ -270,7 +285,7 @@ pre {
     font-size: 18px;
     line-height: 20px;
     background-color: #F8F8F8;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     -webkit-border-radius: 3px;
     -moz-border-radius:    3px;
     -ms-border-radius:     3px;
