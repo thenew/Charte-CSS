@@ -13,7 +13,7 @@ blue: #4A86E8
     -------------------------------------------------- */
 
 body {
-    font: 18px 'Bditter', Cambria, serif;
+    font: 18px 'Bitter', Cambria, serif;
     color: #333;
     background-color: #f0f0f0;
     text-align: justify;
@@ -195,9 +195,13 @@ h1 {
 }
 
 h2 {
+    display: inline-block;
+    padding: 0 10px;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #DD4B39;
+    font-style: italic; 
+    color: #fff;
+    background-color: #333;
 }
 
 .exemple,
