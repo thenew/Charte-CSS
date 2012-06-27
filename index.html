@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/y-mediaqueries.css" type="text/css" />
     <!-- <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' /> -->
-    <script type="text/javascript" src="assets/js/lib/mootools-core-1.4.5.js"></script>
-    <script type="text/javascript" src="assets/js/lib/mootools-more-1.4.0.1-scroll.js"></script>
-    <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
-    <script type="text/javascript" src="assets/js/events.js"></script>
+    <script src="assets/js/lib/mootools-core-1.4.5.js"></script>
+    <script src="assets/js/lib/mootools-more-1.4.0.1-scroll.js"></script>
+    <script src="assets/js/highlight.pack.js"></script>
+    <script src="assets/js/events.js"></script>
     <!--[if lt IE 9]>
         <script src="assets/js/ie/html5.js"></script>
         <script src="assets/js/ie/selectivizr-1.0.2.min.js"></script>
@@ -32,8 +32,9 @@
             <span><a class="scrollAnchor" href="#top">Début</a></span>
             <ol>
                 <li><a class="scrollAnchor" href="#nommage">Nommage</a></li>
-                <li><a class="scrollAnchor" href="#formatage">Formatage</a></li>
+                <li><a class="scrollAnchor" href="#format">Format</a></li>
                 <li><a class="scrollAnchor" href="#exceptions">Exceptions</a></li>
+                <li><a class="scrollAnchor" href="#ordre">Organisation</a></li>
             </ol>
         </nav>
 
@@ -51,19 +52,17 @@
         
         <div class="main-col">
             <ul>
-                <li>In English only</li>
-                <li>Pas d’ID, que des classes</li>
-                <li>tiret “-” et pas d’underscore “_”</li>
+                <li>Codez le plus possible en anglais (noms des classes, commentaires)</li>
+                <li>Ecrivez en minuscule, séparez les mots par un tiret, pas de CamelCase</li>
+                <li>N'utilisez qu'un type de tiret : tiret “-” et non tiret bas “_”</li>
+                <li>Utilisez toujours le même type de guillemets</li>
+                
+                <li>N'utilisez pas d’ID en CSS, uniquement des classes</li>
+                <li>Ne précisez pas les unités pour les valeurs nulles, exemple : margin: 0</li>
             </ul>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
-                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
-                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
-            </p>
         </div>
         
-        <h2 id="formatage">Formatage</h2>
+        <h2 id="formatage">Format</h2>
 
         <section class="exemple">
             <div class="main-col">
@@ -76,10 +75,10 @@
 <span class="n" data-target="note-05">    </span>padding: <span class="value">6px 50px</span>;
     margin-bottom: <span class="value">20px</span>;
     font-size: <span class="value">18px</span>;
-    background-color: <span class="value">#F8F8F8</span>;
-    border: <span class="value">1px solid #CCC</span><span class="n" data-target="note-06">;</span>
-<span class="n" data-target="note-07">}</span>
-<span class="n" data-target="note-08"> </span>
+    background-color: <span class="value n" data-target="note-06">#aaa</span>;
+    border: <span class="value">1px solid #efefef</span><span class="n" data-target="note-07">;</span>
+<span class="n" data-target="note-08">}</span>
+<span class="n" data-target="note-09"> </span>
                 </code></pre>
             </div>
             <aside>
@@ -89,9 +88,10 @@
                     <li id="note-03">Un espace avant l'accolade ouvrante d'une règle</li>
                     <li id="note-04">Un espace après les deux points d'une déclaration</li>
                     <li id="note-05">Une déclaration par ligne dans un bloc de déclarations</li>
-                    <li id="note-06">Ajoutez toujours un point-virgule à la fin d'une déclaration</li>
-                    <li id="note-07">Fermez l'accolade d'une règle au même niveau que le premier caractère de la règle</li>
-                    <li id="note-08">Sautez une ligne entre chaque règle</li>
+                    <li id="note-06">Utilisez le code hexadecimal à 3 caractères quand cela est possible</li>
+                    <li id="note-07">Ajoutez toujours un point-virgule à la fin d'une déclaration</li>
+                    <li id="note-08">Fermez l'accolade d'une règle au même niveau que le premier caractère de la règle</li>
+                    <li id="note-09">Sautez une ligne entre chaque règle</li>
                 </ul>
             </aside>
         </section>
@@ -148,9 +148,9 @@
 
         <h2 id="ordre">Ordre de déclaration</h2>
 
-        <section class="exemple">
+        <section class="exemple exemple-order">
             <div class="main-col">
-                <pre class="exemple-order"><code class="css">
+                <pre><code class="css">
 <span class="class">.selector</span> {
 <span class="n" data-target="note-o1">    content
     position
@@ -197,8 +197,8 @@
 <span class="n" data-target="note-o6">    opacity
     cursor
     transition
-    animation</span>
-}
+    animation
+</span>}
                 </code></pre>
             </div>
             <aside>
@@ -212,6 +212,25 @@
                 </ol>
             </aside>
         </section>
+        
+        <div class="main-col">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+                Cupcake ipsum dolor sit amet I love sesame snaps chocolate cake. Candy oat cake croissant marzipan lollipop cake. Muffin chocolate cake halvah ice cream chupa chups biscuit halvah sesame snaps. Marzipan bonbon jelly-o chocolate cake. Oat cake halvah I love brownie tiramisu soufflé oat cake I love. Bear claw jelly beans pie.
+                Tiramisu tiramisu macaroon gummies jelly-o. Jelly-o liquorice topping pudding biscuit pudding bear claw wafer. Sweet ice cream lollipop chocolate bar marshmallow biscuit pudding chocolate. Cotton candy croissant I love. Sugar plum jelly dessert cake dragée I love sugar plum chocolate oat cake. Faworki candy danish. Sweet chocolate powder jelly beans cupcake chupa chups tiramisu. Marzipan wypas gingerbread I love I love.
+            </p>
+        </div>
+        
     </div><!-- .wrapper -->
 </body>
 </html>

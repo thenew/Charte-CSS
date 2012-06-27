@@ -82,7 +82,7 @@ nav {
     vertical-align: top;
 }
 
-.exemple .main-col,
+.exemple > div,
 .exemple aside {
     display: table-cell;
 }
@@ -105,6 +105,7 @@ nav {
 
 .exemple aside ul li {
     padding-left: 10px;
+    list-style: none;
     border-left: 1px solid #bbb;
 }
 
@@ -179,9 +180,19 @@ h2 {
     color: #DD4B39;
 }
 
-p {
+p,
+ul,
+ol {
     margin-bottom: 20px;
+}
+
+p,
+li {
     line-height: 1.6em;
+}
+
+ul {
+    list-style: disc inside;
 }
 
 a {
