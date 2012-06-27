@@ -24,7 +24,6 @@ body {
     left: 50%;
     width: 100%;
     max-width: 900px;
-    /*margin left -50% width*/
     margin: 0 0 0 -450px;
     -webkit-transition: width .4s ease .1s;
     -moz-transition:    width .4s ease .1s;
@@ -46,7 +45,6 @@ nav {
     top: 5%;
     left: 50%;
     width: 100px;
-    /*-50% of wrapper width -50% of nav width*/
     margin-left: -600px;
 }
 
@@ -55,8 +53,7 @@ nav {
     -------------------------------------------------- */
 
 .exemple .n {
-    /*background-color: #fff7ce;*/
-    background-color: #FFDA28;
+    background-color: #FFE599;
     cursor: help;
     -webkit-transition: background-color .2s;
     -moz-transition:    background-color .2s;
@@ -66,7 +63,7 @@ nav {
 }
 
 .exemple .n:hover {
-    background-color: #FFE599;
+    background-color: #FFDA28;
 }
 
 .exemple01 {
@@ -87,8 +84,12 @@ nav {
     display: table-cell;
 }
 
+.exemple > div > * {
+    margin: 0;
+}
+
 .exemple aside {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .exemple aside li {
@@ -159,6 +160,20 @@ nav {
 }
 
 /*    --------------------------------------------------
+    = Footer
+    -------------------------------------------------- */
+
+footer {
+    padding: 10px 0 0 0;
+    margin: 10px auto 20px;
+    border-top: 2px groove #fff;
+}
+
+footer .refs {
+    float: right;
+}
+
+/*    --------------------------------------------------
     = Commons
     -------------------------------------------------- */
 
@@ -180,6 +195,7 @@ h2 {
     color: #DD4B39;
 }
 
+.exemple,
 p,
 ul,
 ol {
@@ -206,6 +222,21 @@ a {
 
 a:hover {
     color: #ff655f;
+}
+
+.aka span {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -moz-transition:    opacity .4s;
+    -ms-transition:     opacity .4s;
+    -o-transition:      opacity .4s;
+    transition:         opacity .4s;
+}
+
+.aka:hover span {
+    visibility: visible;
+    opacity: .9999;
 }
 
 
