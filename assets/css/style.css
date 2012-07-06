@@ -4,24 +4,24 @@
     -------------------------------------------------- */
 
 body {
-    font: 16px 'Open Sans', 'Helvetica', sans-serif;
+    text-align: justify;
+    font: 16px 'Open Sans','Helvetica',sans-serif;
     font-size-adjust: 0.6;
     color: #434343;
     background-color: #F3F3F3;
-    text-align: justify;
 }
 
 .wrapper {
     position: relative;
     left: 50%;
     width: 100%;
-    max-width: 900px;
     margin: 0 0 0 -450px;
+    max-width: 900px;
     -webkit-transition: width .4s ease .1s;
-    -moz-transition:    width .4s ease .1s;
-    -ms-transition:     width .4s ease .1s;
-    -o-transition:      width .4s ease .1s;
-    transition:         width .4s ease .1s;
+    -moz-transition: width .4s ease .1s;
+    -ms-transition: width .4s ease .1s;
+    -o-transition: width .4s ease .1s;
+    transition: width .4s ease .1s;
 }
 
 .main-col {
@@ -50,8 +50,13 @@ nav ol li:before {
     content: "";
 }
 
-nav a { color: #15466A; }
-nav a:hover { color: #4A86E8; }
+nav a {
+    color: #15466A;
+}
+
+nav a:hover {
+    color: #4A86E8;
+}
 
 /*    --------------------------------------------------
     = Notes
@@ -59,12 +64,12 @@ nav a:hover { color: #4A86E8; }
 
 .exemple .n {
     background-color: #FFE599;
-    cursor: help;
     -webkit-transition: background-color .2s;
-    -moz-transition:    background-color .2s;
-    -ms-transition:     background-color .2s;
-    -o-transition:      background-color .2s;
-    transition:         background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+    cursor: help;
 }
 
 .exemple .n:hover {
@@ -103,16 +108,16 @@ nav a:hover { color: #4A86E8; }
     line-height: 1.4em;
     opacity: 0.5;
     -webkit-transition: all .2s ease .1s;
-    -moz-transition:    all .2s ease .1s;
-    -ms-transition:     all .2s ease .1s;
-    -o-transition:      all .2s ease .1s;
-    transition:         all .2s ease .1s;
+    -moz-transition: all .2s ease .1s;
+    -ms-transition: all .2s ease .1s;
+    -o-transition: all .2s ease .1s;
+    transition: all .2s ease .1s;
 }
 
 .exemple aside ul li {
     padding-left: 10px;
-    list-style: none;
     border-left: 1px solid #bbb;
+    list-style: none;
 }
 
 .exemple aside .active {
@@ -134,26 +139,27 @@ nav a:hover { color: #4A86E8; }
 }
 
 /*Order*/
+
 .exemple-order .n {
     display: block;
     background-color: #fff7ce;
 }
 
 .github {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
-    display: block;
     width: 80px;
     height: 80px;
     overflow: hidden;
     background: url(../img/github.png) center top no-repeat;
-    -webkit-filter: grayscale(1);
     -webkit-transition: all .8s;
-    -moz-transition:    all .8s;
-    -ms-transition:     all .8s;
-    -o-transition:      all .8s;
-    transition:         all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    -webkit-filter: grayscale(1);
 }
 
 .github:hover {
@@ -165,8 +171,8 @@ nav a:hover { color: #4A86E8; }
     -------------------------------------------------- */
 
 footer {
-    padding: 10px 0 0 0;
     margin: 10px auto 20px;
+    padding: 10px 0 0 0;
     border-top: 1px solid #ccc;
 }
 
@@ -181,20 +187,20 @@ h2 {
 
 h1 {
     margin: 20px auto 30px;
-    font-size: 32px;
     text-align: center;
-    letter-spacing: 1px;
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Georgia',sans-serif;
+    font-size: 32px;
     font-style: italic;
+    letter-spacing: 1px;
     color: #DC3522;
 }
 
 h2 {
     display: inline-block;
-    padding: 0 10px;
     margin-bottom: 20px;
+    padding: 0 10px;
     font-size: 24px;
-    font-style: italic; 
+    font-style: italic;
     color: #fff;
     background-color: #333;
 }
@@ -202,6 +208,7 @@ h2 {
 small {
     font-size: 0.8em;
 }
+
 strong {
     font-weight: bold;
 }
@@ -231,18 +238,18 @@ ol {
 }
 
 ol li:before {
+    content: counter(list)" ";
     counter-increment: list;
-    content: counter(list) " ";
     color: #aaa;
 }
 
 a {
     color: #DD4B39;
     -webkit-transition: color .2s;
-    -moz-transition:    color .2s;
-    -ms-transition:     color .2s;
-    -o-transition:      color .2s;
-    transition:         color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
 }
 
 a:hover {
@@ -253,10 +260,10 @@ a:hover {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .4s;
-    -moz-transition:    opacity .4s;
-    -ms-transition:     opacity .4s;
-    -o-transition:      opacity .4s;
-    transition:         opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
 }
 
 .aka:hover span {
@@ -264,21 +271,23 @@ a:hover {
     opacity: .9999;
 }
 
-
 /*    --------------------------------------------------
     = Divers
     -------------------------------------------------- */
 
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
 
-.cf:after { clear:both; }
+.cf:after {
+    clear: both;
+}
 
-/* For IE 6/7 (trigger hasLayout) */
-.cf { *zoom:1; }
+.cf {
+    *zoom: 1;
+}
 
 /*    --------------------------------------------------
     = Github theme HIGHLIGHT.JS
@@ -287,32 +296,32 @@ a:hover {
 
 pre {
     position: relative;
-    max-width: 100%;
-    padding: 5px 40px;
     margin-bottom: 20px;
+    padding: 5px 40px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     overflow: auto;
-    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+    font-family: Consolas,Menlo,"Liberation Mono",Courier,monospace;
     font-size: 18px;
     line-height: 20px;
     background-color: #F8F8F8;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 3px;
-    -moz-border-radius:    3px;
-    -ms-border-radius:     3px;
-    -o-border-radius:      3px;
-    border-radius:         3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 pre code {
-  display: block;
+    display: block;
 }
 
 pre .comment,
 pre .template_comment,
 pre .diff .header,
 pre .javadoc {
-  color: #998;
-  font-style: italic
+    font-style: italic;
+    color: #998;
 }
 
 pre .keyword,
@@ -324,63 +333,61 @@ pre .nginx .title,
 pre .subst,
 pre .request,
 pre .status {
-  color: #000;
-  font-weight: bold
+    font-weight: bold;
+    color: #000;
 }
-
 
 pre .string,
 pre .tag .value,
 pre .phpdoc,
 pre .tex .formula {
-  color: #d14
+    color: #d14;
 }
 
 pre .number,
 pre .hexcolor,
 pre .value {
-    color: #dc3522
+    color: #dc3522;
 }
 
 pre .title,
 pre .id {
-  color: #900;
-  font-weight: bold
+    font-weight: bold;
+    color: #900;
 }
 
 pre .javascript .title,
 pre .lisp .title,
 pre .subst {
-  font-weight: normal
+    font-weight: normal;
 }
-
 
 pre .class,
 pre .class .title,
 pre .haskell .type,
 pre .vhdl .literal,
 pre .tex .command {
-  color: #277473;
-  font-weight: bold
+    font-weight: bold;
+    color: #277473;
 }
 
 pre .tag,
 pre .tag .title,
 pre .rules .property,
 pre .django .tag .keyword {
-  color: #000080;
-  font-weight: normal
+    font-weight: normal;
+    color: #000080;
 }
 
 pre .attribute,
 pre .variable,
 pre .instancevar,
 pre .lisp .body {
-  color: #222
+    color: #222;
 }
 
 pre .regexp {
-  color: #009926
+    color: #009926;
 }
 
 pre .symbol,
@@ -390,13 +397,13 @@ pre .ruby .symbol .keymethods,
 pre .lisp .keyword,
 pre .tex .special,
 pre .input_number {
-  color: #990073
+    color: #990073;
 }
 
 pre .builtin,
 pre .built_in,
 pre .lisp .title {
-  color: #0086b3
+    color: #0086b3;
 }
 
 pre .preprocessor,
@@ -404,26 +411,26 @@ pre .pi,
 pre .doctype,
 pre .shebang,
 pre .cdata {
-  color: #999;
-  font-weight: bold
+    font-weight: bold;
+    color: #999;
 }
 
 pre .deletion {
-  background: #fdd
+    background: #fdd;
 }
 
 pre .addition {
-  background: #dfd
+    background: #dfd;
 }
 
 pre .diff .change {
-  background: #0086b3
+    background: #0086b3;
 }
 
 pre .chunk {
-  color: #aaa
+    color: #aaa;
 }
 
 pre .tex .formula {
-  opacity: 0.5;
+    opacity: 0.5;
 }
