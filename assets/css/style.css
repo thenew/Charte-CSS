@@ -1,21 +1,13 @@
 @charset "UTF-8";
 /*    --------------------------------------------------
-    = Variables
-    -------------------------------------------------- */
-/*
-red : #DD4B39
-green : #00D892
-blue: #4A86E8
-*/
-
-/*    --------------------------------------------------
     = Layout
     -------------------------------------------------- */
 
 body {
-    font: 18px 'Bitter', Cambria, serif;
-    color: #333;
-    background-color: #f0f0f0;
+    font: 16px 'Open Sans', 'Helvetica', sans-serif;
+    font-size-adjust: 0.6;
+    color: #434343;
+    background-color: #F3F3F3;
     text-align: justify;
 }
 
@@ -47,6 +39,7 @@ nav {
     width: 100px;
     margin-left: -600px;
     text-align: left;
+    font-size: 14px;
 }
 
 nav ol {
@@ -191,6 +184,9 @@ h1 {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1px;
+    font-family: 'Georgia', sans-serif;
+    font-style: italic;
+    color: #DC3522;
 }
 
 h2 {
@@ -201,6 +197,20 @@ h2 {
     font-style: italic; 
     color: #fff;
     background-color: #333;
+}
+
+small {
+    font-size: 0.8em;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+
+.chapter {
+    margin-bottom: 40px;
 }
 
 .exemple,
@@ -282,7 +292,7 @@ pre {
     position: relative;
     max-width: 100%;
     padding: 5px 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow: auto;
     font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
     font-size: 18px;
