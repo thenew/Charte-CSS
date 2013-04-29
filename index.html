@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charte CSS</title>
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="http://thenew.fr/favicon.png" />
     <link rel="stylesheet" href="assets/css/a-reset.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/y-mediaqueries.css" type="text/css" />
@@ -27,7 +27,7 @@
     <a class="github" href="https://github.com/thenew/Charte-CSS" target="_blank"></a>
 
     <div class="wrapper" id="top">
-        
+
         <nav>
             <span><a href="#top">Début</a></span>
             <ol>
@@ -49,10 +49,13 @@
                 Nous codons pour des humains, pour nos collaborateurs présents et/ou futurs donc un code lisible et compréhensible est primordial.
                 Cette charte propose des règles pour écrire des CSS cohérentes et uniformisées pour améliorer leur maintenabilité.
             </p>
+            <p>
+                Il est recommandé de minifier les CSS pour des raisons de performance, mais uniquement en environnement de production.
+            </p>
         </div>
-        
+
         <h2 id="structure">Structure</h2>
-        
+
         <div class="main-col chapter">
             <p>
                 Il est préférable de répartir les CSS en catégories dans des fichiers séparés. Les fichiers sont à charger dans l'ordre pour respecter la cascade des styles.
@@ -75,26 +78,28 @@
             </p>
             <pre><code class="css">
 <span class="comment">
-/*    -----------------------------------------------
-    = Grande partie (ex : Nav)
-    ----------------------------------------------- */
 
+/* ----------------------------------------
+   Titre niveau 1
+   ---------------------------------------- */
 
+/* Titre niveau 2
+   ----------------------- */
 
-/*Sous-partie (ex : submenu)*/
+/* Titre niveau 3 */
 </span>
             </code></pre>
         </div>
-        
+
         <h2 id="nommage">Nommage</h2>
-        
+
         <div class="main-col chapter">
             <p>
-                Écrivez toujours en minuscule et séparez les mots par un tiret, que ce soit pour les classes CSS ou les images, pas de CamelCase.
-                Le nom d'une classe doit signifier la fonction de l'élément qu'elle style et non son apparence. Codez le plus possible en anglais (noms des classes, commentaires). 
+                Écrivez toujours en minuscule et séparez les mots par un tiret, que ce soit pour les classes CSS ou les images, pas de CamelCase. Utilisez le même nom pour la classe et pour l'image associée (exemple : .icon-user et icon-user.png).
+                Dans l'absolu, le nom d'une classe doit signifier la fonction de l'élément qu'elle style et non son apparence. Codez le plus possible en anglais (noms des classes, commentaires).
             </p>
         </div>
-        
+
         <h2 id="format">Format</h2>
 
         <section class="exemple chapter">
@@ -135,7 +140,7 @@
                     <li id="note-unit">Ne précisez pas les unités pour les valeurs nulles.</li>
                     <li id="note-06">Utilisez le code hexadécimal à 3 caractères dès que possible.</li>
                     <li id="note-alignement">Avec les préfixes vendeurs, l'alignement vertical se fait après les deux points.</li>
-                    <li id="note-o">Ne précisez pas le 0 dans une valeur comme 0.2.</li>  
+                    <li id="note-o">Ne précisez pas le 0 dans une valeur comme 0.2.</li>
                     <li id="note-09">Sautez une ligne entre chaque règle.</li>
                     <li id="note-07">Ajoutez toujours un point-virgule à la fin d'une déclaration.</li>
                     <li id="note-08">Fermez l'accolade au même niveau que les sélecteurs.</li>
@@ -237,9 +242,10 @@
 
         <div class="main-col chapter">
             <ul>
-                <li><a href="https://github.com/necolas/idiomatic-css" target="_blank">Principes pour des CSS idiomatiques</a></li>
+                <li><a href="https://github.com/necolas/idiomatic-css/tree/master/translations/fr-FR" target="_blank">Principes pour des CSS idiomatiques</a></li>
                 <li><a href="http://codex.wordpress.org/CSS_Coding_Standards" target="_blank">Normes CSS de Wordpress</a></li>
                 <li><a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules" target="_blank">Charte CSS de Google</a></li>
+                <li><a href="http://oli.jp/2011/ids/" target="_blank">[en] Don’t use IDs in CSS selectors?</a> <small>Oli Studholme</small></li>
                 <li><a href="http://jigsaw.w3.org/css-validator" target="_blank">Validation CSS W3C</a></li>
                 <br />
                 <li><a href="https://developer.mozilla.org/fr/CSS" target="_blank">MDN</a> - La meilleure documentation HTML, CSS, JS</li>
@@ -247,12 +253,13 @@
                 <li><a href="http://csslisible.com" target="_blank">CSSLisible</a> - pour nettoyer vos CSS <small>(existe aussi en <a href="https://github.com/thierrylemoulec/Sublime-Csslisible" target="_blank">package Sublime Text</a>)</small></li>
             </ul>
         </div>
-        
+
         <footer class="cf">
             <a class="aka" href="http://thenew.fr" target="_blank">Rémy <span>@thenew</span></a>
+            <span class="version">v 1.1 <small>(29/04/2013)</small></span>
         </footer>
-        
-    </div><!-- .wrapper -->
+
+    </div>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-164644-9']);
